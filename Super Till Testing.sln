@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Website", "Super Till Testing\Website\Website.fsproj", "{458AA420-743F-4D0C-BB84-81E37C0CAE99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Super Till Testing\Web\Web.csproj", "{963F5A74-63B5-437B-A84A-BB9FDBF84408}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{458AA420-743F-4D0C-BB84-81E37C0CAE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458AA420-743F-4D0C-BB84-81E37C0CAE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458AA420-743F-4D0C-BB84-81E37C0CAE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458AA420-743F-4D0C-BB84-81E37C0CAE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963F5A74-63B5-437B-A84A-BB9FDBF84408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963F5A74-63B5-437B-A84A-BB9FDBF84408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963F5A74-63B5-437B-A84A-BB9FDBF84408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963F5A74-63B5-437B-A84A-BB9FDBF84408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
