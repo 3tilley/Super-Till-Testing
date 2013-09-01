@@ -89,7 +89,7 @@ module SampleSite =
                     Menu = menu
                     Main = main ctx
                     Sidebar = [Text "Put your side bar here"]
-                    Footer = [Text "Your website.  Copyright (c) 2011 YourCompany.com"]
+                    Footer = [Text "Copyright (c) 2013 SuperTill Enterprises"]
                     Title = title
                 }
 
