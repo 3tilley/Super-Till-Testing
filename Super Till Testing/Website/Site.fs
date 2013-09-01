@@ -102,16 +102,8 @@ module SampleSite =
                 [
                     H1 [Text "Welcome to our site!"]
                     "Let us know how we can contact you" => ctx.Link Action.Contact
+                    Div [new Controls.HelloControl()]
                  ]
-
-        /// A page to collect contact information.
-        let ContactPage : Content<Action> =
-            Skin.WithTemplate "Contact" <| fun ctx ->
-                [
-                    H1 [Text "Contact Form"]
-                    Div [
-                        new SignupSequenceControl()]
-                ]
 
         /// A simple page that echoes a parameter.
         let EchoPage param : Content<Action> =
@@ -120,25 +112,6 @@ module SampleSite =
                     H1 [Text param]
                 ]
 
-        /// A simple login page.
-        let LoginPage (redirectAction: option<Action>): Content<Action> =
-            Skin.WithTemplate "Login" <| fun ctx ->
-                let redirectLink =
-                    match redirectAction with
-                    | Some action -> action
-                    | None        -> Action.Home
-                    |> ctx.Link
-                [
-                    H1 [Text "Login"]
-                    P [
-                        Text "Login with any username and password='"
-                        I [Text "password"]
-                        Text "'."
-                    ]
-                    Div [
-                        new LoginControl(redirectLink)
-                    ]
-                ]
 
         /// A simple page that users must log in to view.
         let ProtectedPage : Content<Action> =
@@ -157,12 +130,8 @@ module SampleSite =
         let basic =
             Sitelet.Infer <| fun action ->
                 match action with
-                | Action.Contact ->
-                    Pages.ContactPage
                 | Action.Echo param ->
                     Pages.EchoPage param
-                | Action.Login action->
-                    Pages.LoginPage action
                 | Action.Logout ->
                     // Logout user and redirect to home
                     UserSession.Logout ()
